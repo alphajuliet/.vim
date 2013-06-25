@@ -1,4 +1,5 @@
 ".vimrc
+" ---------------------
 
 set nocompatible
 filetype off
@@ -7,18 +8,27 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
 Bundle 'gmarik/vundle'
 
+" ---------------------
 " My bundles
-Bundle 'vim-ruby/vim-ruby'
+
+" UI
 Bundle 'flazz/vim-colorschemes'
+
+" Languages
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-rake'
 Bundle 'groenewege/vim-less'
 Bundle 'tpope/vim-markdown'
 Bundle 'n3.vim'
 Bundle 'sparql.vim'
-Bundle 'VimClojure.vim'
+Bundle 'VimClojure'
+Bundle 'pangloss/vim-javascript'
+Bundle 'leshill/vim-json'
+Bundle 'itspriddle/vim-jquery'
 
+" ---------------------
 "Text formatting
 set tabstop=2
 set shiftwidth=2
