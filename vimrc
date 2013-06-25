@@ -1,6 +1,23 @@
 ".vimrc
 
-call pathogen#infect()
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" My bundles
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'flazz/vim-colorschemes'
+Bundle 'groenewege/vim-less'
+Bundle 'tpope/vim-markdown'
+Bundle 'n3.vim'
+Bundle 'sparql.vim'
+Bundle 'VimClojure.vim'
 
 "Text formatting
 set tabstop=2
@@ -16,7 +33,6 @@ set laststatus=2
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set nocompatible
 set laststatus=2
 set showmode
 set showcmd
