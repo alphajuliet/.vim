@@ -15,6 +15,7 @@ Bundle 'gmarik/vundle'
 
 " UI
 Bundle 'flazz/vim-colorschemes'
+Bundle 'kien/rainbow_parentheses.vim'
 
 " Languages
 Bundle 'vim-ruby/vim-ruby'
@@ -23,7 +24,8 @@ Bundle 'groenewege/vim-less'
 Bundle 'tpope/vim-markdown'
 Bundle 'n3.vim'
 Bundle 'sparql.vim'
-Bundle 'VimClojure'
+Bundle 'guns/vim-clojure-static'
+Bundle 'tpope/vim-fireplace'
 Bundle 'pangloss/vim-javascript'
 Bundle 'leshill/vim-json'
 Bundle 'itspriddle/vim-jquery'
