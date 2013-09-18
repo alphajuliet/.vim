@@ -30,6 +30,10 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'leshill/vim-json'
 Bundle 'itspriddle/vim-jquery'
 
+" Additional filetype recognition
+autocmd BufNewFile,BufReadPost *.rq set filetype=sparql
+autocmd BufNewFile,BufReadPost *.ttl set filetype=n3
+
 " ---------------------
 "Text formatting
 set tabstop=2
