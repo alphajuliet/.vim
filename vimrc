@@ -15,6 +15,7 @@ Bundle 'gmarik/vundle'
 
 " UI
 Bundle 'flazz/vim-colorschemes'
+Bundle 'kien/rainbow_parentheses.vim'
 
 " Languages
 Bundle 'vim-ruby/vim-ruby'
@@ -24,12 +25,17 @@ Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-surround'
 Bundle 'n3.vim'
 Bundle 'sparql.vim'
-Bundle 'VimClojure'
+Bundle 'guns/vim-clojure-static'
+Bundle 'tpope/vim-fireplace'
 Bundle 'pangloss/vim-javascript'
 Bundle 'leshill/vim-json'
 Bundle 'itspriddle/vim-jquery'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'ragtag.vim'
+
+" Additional filetype recognition
+autocmd BufNewFile,BufReadPost *.rq set filetype=sparql
+autocmd BufNewFile,BufReadPost *.ttl set filetype=n3
 
 " ---------------------
 "Text formatting
