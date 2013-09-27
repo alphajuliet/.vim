@@ -21,12 +21,15 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rake'
 Bundle 'groenewege/vim-less'
 Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-surround'
 Bundle 'n3.vim'
 Bundle 'sparql.vim'
 Bundle 'VimClojure'
 Bundle 'pangloss/vim-javascript'
 Bundle 'leshill/vim-json'
 Bundle 'itspriddle/vim-jquery'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'ragtag.vim'
 
 " ---------------------
 "Text formatting
