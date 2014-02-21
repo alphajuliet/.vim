@@ -33,6 +33,9 @@ Bundle 'itspriddle/vim-jquery'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'ragtag.vim'
 
+" Enable build-in macros
+runtime macros/matchit.vim
+
 " Additional filetype recognition
 autocmd BufNewFile,BufReadPost *.rq set filetype=sparql
 autocmd BufNewFile,BufReadPost *.ttl set filetype=n3
