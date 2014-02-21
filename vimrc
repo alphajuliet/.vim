@@ -33,6 +33,11 @@ Bundle 'itspriddle/vim-jquery'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'ragtag.vim'
 
+" nREPL support
+Bundle 'vim-fireplace.git'
+Bundle 'vim-classpath.git'
+Bundle 'vim-clojure-static.git'
+
 " Enable build-in macros
 runtime macros/matchit.vim
 
