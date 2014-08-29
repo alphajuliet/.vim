@@ -8,35 +8,36 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " ---------------------
 " My bundles
 
 " UI
-Bundle 'flazz/vim-colorschemes'
-Bundle 'kien/rainbow_parentheses.vim'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'kien/rainbow_parentheses.vim'
 
 " Languages
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-rake'
-Bundle 'groenewege/vim-less'
-Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-surround'
-Bundle 'n3.vim'
-Bundle 'sparql.vim'
-Bundle 'guns/vim-clojure-static'
-Bundle 'tpope/vim-fireplace'
-Bundle 'pangloss/vim-javascript'
-Bundle 'leshill/vim-json'
-Bundle 'itspriddle/vim-jquery'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'ragtag.vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rake'
+Plugin 'groenewege/vim-less'
+Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-surround'
+Plugin 'n3.vim'
+Plugin 'sparql.vim'
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-fireplace'
+Plugin 'pangloss/vim-javascript'
+Plugin 'leshill/vim-json'
+Plugin 'itspriddle/vim-jquery'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'ragtag.vim'
+Plugin 'JuliaLang/julia-vim'
 
 " nREPL support
-Bundle 'vim-fireplace.git'
-Bundle 'vim-classpath.git'
-Bundle 'vim-clojure-static.git'
+" Plugin 'vim-fireplace.git'
+" Plugin 'vim-classpath.git'
+" Plugin 'vim-clojure-static.git'
 
 " Enable build-in macros
 runtime macros/matchit.vim
