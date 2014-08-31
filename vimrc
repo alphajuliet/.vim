@@ -4,8 +4,8 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 Plugin 'gmarik/vundle'
@@ -78,7 +78,7 @@ filetype plugin indent on
 
 "Colour scheme
 set background=dark
-color beachcomber
+colorscheme beachcomber
 highlight LineNr ctermfg=grey
 
 "Backups
