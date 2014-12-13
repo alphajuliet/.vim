@@ -25,7 +25,6 @@ Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-surround'
 Plugin 'n3.vim'
 Plugin 'sparql.vim'
-Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fireplace'
 Plugin 'pangloss/vim-javascript'
 Plugin 'leshill/vim-json'
@@ -34,6 +33,10 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'ragtag.vim'
 Plugin 'JuliaLang/julia-vim'
 
+Plugin 'guns/vim-clojure-static'
+Plugin 'guns/vim-clojure-highlight'
+Plugin 'tpope/vim-foreplay'
+
 " nREPL support
 " Plugin 'vim-fireplace.git'
 " Plugin 'vim-classpath.git'
@@ -41,6 +44,8 @@ Plugin 'JuliaLang/julia-vim'
 
 " Enable build-in macros
 runtime macros/matchit.vim
+
+call vundle#end()
 
 " Additional filetype recognition
 autocmd BufNewFile,BufReadPost *.rq set filetype=sparql
