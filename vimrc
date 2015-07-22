@@ -43,6 +43,9 @@ Plugin 'guns/vim-clojure-highlight'
 " Plugin 'vim-classpath.git'
 " Plugin 'vim-clojure-static.git'
 
+au BufEnter *.hs compiler ghc
+let g:haddock_browser="/Applications/Safari.app/Contents/MacOS/Safari"
+
 " Enable build-in macros
 runtime macros/matchit.vim
 
