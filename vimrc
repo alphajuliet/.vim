@@ -32,6 +32,7 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'ragtag.vim'
 Plugin 'JuliaLang/julia-vim'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'lukerandall/haskellmode-vim'
 
 Plugin 'tpope/vim-fireplace'
 Plugin 'guns/vim-clojure-static'
