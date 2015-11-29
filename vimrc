@@ -17,12 +17,15 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'kien/rainbow_parentheses.vim'
 
-" Languages
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-rake'
-Plugin 'groenewege/vim-less'
-Plugin 'tpope/vim-markdown'
+" General
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-commentary'
+
+" Languages
+Plugin 'tpope/vim-markdown'
+Plugin 'groenewege/vim-less'
+Plugin 'tpope/vim-rake'
+Plugin 'vim-ruby/vim-ruby'
 Plugin 'n3.vim'
 Plugin 'sparql.vim'
 Plugin 'pangloss/vim-javascript'
@@ -32,19 +35,26 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'ragtag.vim'
 Plugin 'JuliaLang/julia-vim'
 Plugin 'elixir-lang/vim-elixir'
-Plugin 'lukerandall/haskellmode-vim'
 
+Plugin 'lukerandall/haskellmode-vim'
+"Plugin 'eagletmt/ghcmod-vim'
+Plugin 'shougo/vimproc.vim'
+
+" Clojure
 Plugin 'tpope/vim-fireplace'
 Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-classpath.git'
 Plugin 'guns/vim-clojure-highlight'
 
-" nREPL support
-" Plugin 'vim-fireplace.git'
-" Plugin 'vim-classpath.git'
-" Plugin 'vim-clojure-static.git'
+" Enable rainbox parens, esp for Clojure
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
 au BufEnter *.hs compiler ghc
 let g:haddock_browser="/Applications/Safari.app/Contents/MacOS/Safari"
+let g:haddock_docdir="/usr/local/share/doc/ghc/html/"
 
 " Enable build-in macros
 runtime macros/matchit.vim
