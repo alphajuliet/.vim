@@ -35,9 +35,11 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'ragtag.vim'
 Plugin 'JuliaLang/julia-vim'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'elmcast/elm-vim'
 
 Plugin 'lukerandall/haskellmode-vim'
-"Plugin 'eagletmt/ghcmod-vim'
+Plugin 'eagletmt/ghcmod-vim'
+Plugin 'scrooloose/syntastic.git'
 Plugin 'shougo/vimproc.vim'
 
 " Clojure
@@ -52,11 +54,23 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
+" Haskell
 au BufEnter *.hs compiler ghc
 let g:haddock_browser="/Applications/Safari.app/Contents/MacOS/Safari"
 let g:haddock_docdir="/usr/local/share/doc/ghc/html/"
 
-" Enable build-in macros
+map <Leader>s :SyntasticToggleMode<CR>
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+
+" Enable built-in macros
 runtime macros/matchit.vim
 
 call vundle#end()
