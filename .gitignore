@@ -1,4 +1,5 @@
 bundle/
 colors/
 backup/
+pack/*/
 .netrwhist
