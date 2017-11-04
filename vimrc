@@ -29,15 +29,18 @@ Plugin 'groenewege/vim-less'
 Plugin 'tpope/vim-rake'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'n3.vim'
-Plugin 'sparql.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'leshill/vim-json'
 Plugin 'itspriddle/vim-jquery'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'ragtag.vim'
-Plugin 'JuliaLang/julia-vim'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'elmcast/elm-vim'
+Plugin 'rvesse/vim-sparql'
+Plugin 'raichoo/purescript-vim'
+Plugin 'frankier/vim-eve'
+" Plugin 'sparql.vim'
+" Plugin 'JuliaLang/julia-vim'
 
 " Clojure
 Plugin 'tpope/vim-fireplace'
@@ -122,8 +125,6 @@ set laststatus=2
 set nowrap
 set showmode
 set textwidth=80
-set formatoptions=qrn1
-set laststatus=2
 set expandtab
 set incsearch
 set showcmd
