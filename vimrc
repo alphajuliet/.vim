@@ -4,58 +4,6 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle
-Plugin 'VundleVim/Vundle.vim'
-
-" ---------------------
-" My bundles
-
-" UI
-" Plugin 'flazz/vim-colorschemes'
-" Plugin 'kien/rainbow_parentheses.vim'
-" Plugin 'scrooloose/nerdtree.git'
-" Plugin 'scrooloose/nerdcommenter.git'
-
-" General
-" Plugin 'tpope/vim-surround'
-" Plugin 'tpope/vim-commentary'
-
-" Languages
-" Plugin 'tpope/vim-markdown'
-" Plugin 'groenewege/vim-less'
-" Plugin 'tpope/vim-rake'
-" Plugin 'vim-ruby/vim-ruby'
-" Plugin 'n3.vim'
-" Plugin 'pangloss/vim-javascript'
-" Plugin 'leshill/vim-json'
-" Plugin 'itspriddle/vim-jquery'
-" Plugin 'digitaltoad/vim-jade'
-" Plugin 'ragtag.vim'
-" Plugin 'elixir-lang/vim-elixir'
-" Plugin 'elmcast/elm-vim'
-" Plugin 'rvesse/vim-sparql'
-" Plugin 'raichoo/purescript-vim'
-" Plugin 'frankier/vim-eve'
-" Plugin 'sparql.vim'
-" Plugin 'JuliaLang/julia-vim'
-
-" Clojure
-" Plugin 'tpope/vim-fireplace'
-" Plugin 'guns/vim-clojure-static'
-" Plugin 'tpope/vim-classpath.git'
-" Plugin 'guns/vim-clojure-highlight'
-
-" Haskell
-" Plugin 'lukerandall/haskellmode-vim'
-" Plugin 'eagletmt/ghcmod-vim.git'
-" Plugin 'eagletmt/neco-ghc'
-" Plugin 'scrooloose/syntastic.git'
-" Plugin 'shougo/vimproc.vim'
-" Plugin 'godlygeek/tabular.git'
-" Plugin 'ervandew/supertab.git'
 
 " Enable rainbox parens, esp for Clojure
 au VimEnter * RainbowParenthesesToggle
@@ -92,8 +40,6 @@ vmap a- :Tabularize /-><CR>
 
 " Enable built-in macros
 runtime macros/matchit.vim
-
-call vundle#end()
 
 " Additional filetype recognition
 autocmd BufNewFile,BufReadPost *.rq set filetype=sparql
