@@ -44,7 +44,7 @@ runtime macros/matchit.vim
 " Additional filetype recognition
 autocmd BufNewFile,BufReadPost *.rq set filetype=sparql
 autocmd BufNewFile,BufReadPost *.ttl set filetype=n3
-autocmd BufNewFile,BufReadPost *.purs set filetype=haskell
+" autocmd BufNewFile,BufReadPost *.purs set filetype=haskell
 autocmd BufNewFile,BufReadPost *.rkt,*.rktl set filetype=scheme
 
 map <Leader>n :NERDTreeToggle<CR>

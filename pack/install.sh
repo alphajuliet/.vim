@@ -85,15 +85,19 @@ function package () {
   package 'shougo/vimproc.vim' &
   package 'godlygeek/tabular.git' &
   package 'ervandew/supertab.git' &
+  package 'purescript-contrib/purescript-vim'
   wait
 ) &
 
 (
   set_group syntax
-  # package 'tpope/markdown' &
   package 'groenewege/vim-less' &
   package 'rvesse/vim-sparql' &
+  package 'elmcast/elm-vim' &
   # package 'n3.vim' &
+  # package https://github.com/kchmck/vim-coffee-script.git &
+  package https://github.com/tpope/vim-markdown.git &
+  package https://github.com/ap/vim-css-color.git &
   wait
 ) &
 
@@ -105,14 +109,5 @@ function package () {
 #   package 'guns/vim-clojure-highlight'
 #   wait
 # ) &
-
-#(
-#  set_group syntax
-#  package https://github.com/kchmck/vim-coffee-script.git &
-#  package https://github.com/tpope/vim-markdown.git &
-#  package https://github.com/ap/vim-css-color.git &
-#  wait
-#) &
-
 
 wait
