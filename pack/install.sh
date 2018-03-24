@@ -94,8 +94,7 @@ function package () {
   package 'groenewege/vim-less' &
   package 'rvesse/vim-sparql' &
   package 'elmcast/elm-vim' &
-  # package 'n3.vim' &
-  # package https://github.com/kchmck/vim-coffee-script.git &
+  package 'niklasl/vim-rdf' &
   package https://github.com/tpope/vim-markdown.git &
   package https://github.com/ap/vim-css-color.git &
   wait
