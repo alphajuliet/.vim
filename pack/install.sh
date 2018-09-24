@@ -72,6 +72,7 @@ function package () {
   package 'pangloss/vim-javascript' &
   package 'leshill/vim-json' &
   package 'itspriddle/vim-jquery' &
+  package 'mxw/vim-jsx'
   # package 'digitaltoad/vim-jade' &
   wait
 ) &
@@ -92,6 +93,7 @@ function package () {
 (
   set_group syntax
   package 'groenewege/vim-less' &
+  package 'MicahElliott/vrod' &
   package 'rvesse/vim-sparql' &
   package 'elmcast/elm-vim' &
   package 'niklasl/vim-rdf' &

@@ -4,7 +4,6 @@
 set nocompatible
 filetype off
 
-
 " Enable rainbox parens, esp for Clojure
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
@@ -44,7 +43,7 @@ runtime macros/matchit.vim
 " Additional filetype recognition
 autocmd BufNewFile,BufReadPost *.rq set filetype=sparql
 autocmd BufNewFile,BufReadPost *.ttl set filetype=n3
-" autocmd BufNewFile,BufReadPost *.purs set filetype=haskell
+autocmd BufNewFile,BufReadPost *.purs set filetype=haskell
 autocmd BufNewFile,BufReadPost *.rkt,*.rktl set filetype=scheme
 
 map <Leader>n :NERDTreeToggle<CR>
@@ -80,7 +79,8 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set mouse=a
-set clipboard=unnamedplus,autoselect
+"set clipboard=unnamedplus,autoselect
+set clipboard=autoselect
 set cmdheight=1
 set completeopt=menuone,menu,longest
 
