@@ -13,29 +13,29 @@ au Syntax * RainbowParenthesesLoadBraces
 au BufEnter *.hs compiler ghc
 autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
-map <Leader>s :SyntasticToggleMode<CR>
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
+" map <Leader>s :SyntasticToggleMode<CR>
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 0
+" let g:syntastic_check_on_open = 0
+" let g:syntastic_check_on_wq = 0
 
-let g:haddock_browser="/Applications/Safari.app/Contents/MacOS/Safari"
-let g:haddock_docdir="/usr/local/share/doc/ghc/html/"
-let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
-let g:haskellmode_completion_ghc = 1
+" let g:haddock_browser="/Applications/Safari.app/Contents/MacOS/Safari"
+" let g:haddock_docdir="/usr/local/share/doc/ghc/html/"
+" let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
+" let g:haskellmode_completion_ghc = 1
 
-map <silent> tw :GhcModTypeInsert<CR>
-map <silent> ts :GhcModSplitFunCase<CR>
-map <silent> tq :GhcModType<CR>
-map <silent> te :GhcModTypeClear<CR>
+" map <silent> tw :GhcModTypeInsert<CR>
+" map <silent> ts :GhcModSplitFunCase<CR>
+" map <silent> tq :GhcModType<CR>
+" map <silent> te :GhcModTypeClear<CR>
 
-let g:haskell_tabular = 1
-vmap a= :Tabularize /=<CR>
-vmap a; :Tabularize /::<CR>
-vmap a- :Tabularize /-><CR>
+" let g:haskell_tabular = 1
+" vmap a= :Tabularize /=<CR>
+" vmap a; :Tabularize /::<CR>
+" vmap a- :Tabularize /-><CR>
 
 " Enable built-in macros
 runtime macros/matchit.vim
@@ -43,7 +43,7 @@ runtime macros/matchit.vim
 " Additional filetype recognition
 autocmd BufNewFile,BufReadPost *.rq set filetype=sparql
 autocmd BufNewFile,BufReadPost *.ttl set filetype=n3
-autocmd BufNewFile,BufReadPost *.purs set filetype=haskell
+"autocmd BufNewFile,BufReadPost *.purs set filetype=haskell
 autocmd BufNewFile,BufReadPost *.rkt,*.rktl set filetype=scheme
 
 map <Leader>n :NERDTreeToggle<CR>
