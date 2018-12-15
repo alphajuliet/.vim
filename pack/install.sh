@@ -51,9 +51,9 @@ function package () {
   set_group ui
   package 'flazz/vim-colorschemes' &
   package 'kien/rainbow_parentheses.vim' &
-  package 'scrooloose/nerdtree' &
-  package 'scrooloose/nerdcommenter' &
-  package 'altercation/vim-colors-solarized' &
+  #package 'scrooloose/nerdtree' &
+  #package 'scrooloose/nerdcommenter' &
+  #package 'altercation/vim-colors-solarized' &
   wait
 ) &
 
@@ -95,20 +95,20 @@ function package () {
   package 'groenewege/vim-less' &
   package 'MicahElliott/vrod' &
   package 'rvesse/vim-sparql' &
-  package 'elmcast/elm-vim' &
+  #package 'elmcast/elm-vim' &
   package 'niklasl/vim-rdf' &
   package https://github.com/tpope/vim-markdown.git &
   package https://github.com/ap/vim-css-color.git &
   wait
 ) &
 
-# (
+(
 #   set_group clojure
 #   package 'tpope/vim-fireplace'
 #   package 'guns/vim-clojure-static'
 #   package 'tpope/vim-classpath.git'
 #   package 'guns/vim-clojure-highlight'
-#   wait
-# ) &
+  wait
+) &
 
 wait
