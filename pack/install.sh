@@ -42,8 +42,8 @@ function package () {
 
 (
   set_group general
-  package 'tpope/vim-surround' &
-  package 'tpope/vim-commentary' &
+  package 'https://tpope.io/vim/surround.git' &
+  package 'https://tpope.io/vim/commentary' &
   wait
 ) &
 
@@ -51,64 +51,64 @@ function package () {
   set_group ui
   package 'flazz/vim-colorschemes' &
   package 'kien/rainbow_parentheses.vim' &
-  #package 'scrooloose/nerdtree' &
-  #package 'scrooloose/nerdcommenter' &
-  #package 'altercation/vim-colors-solarized' &
+  # package 'scrooloose/nerdtree' &
+  # package 'scrooloose/nerdcommenter' &
+  # package 'altercation/vim-colors-solarized' &
   wait
 ) &
 
-(
-  set_group ruby
-  package 'tpope/vim-rails' &
-  package 'tpope/vim-rake' &
-  package 'tpope/vim-bundler' &
-  package 'tpope/vim-endwise' &
-  package 'vim-ruby/vim-ruby' &
-  wait
-) &
+# (
+  # set_group ruby
+  # package 'tpope/vim-rails' &
+  # package 'tpope/vim-rake' &
+  # package 'tpope/vim-bundler' &
+  # package 'tpope/vim-endwise' &
+  # package 'vim-ruby/vim-ruby' &
+  # wait
+# ) &
 
 (
   set_group js
-  package 'pangloss/vim-javascript' &
+  package 'https://github.com/pangloss/vim-javascript.git' &
   package 'leshill/vim-json' &
-  package 'itspriddle/vim-jquery' &
+  # package 'itspriddle/vim-jquery' &
   package 'mxw/vim-jsx'
   # package 'digitaltoad/vim-jade' &
   wait
 ) &
 
-(
-  set_group haskell
-  package 'lukerandall/haskellmode-vim' &
-  package 'eagletmt/ghcmod-vim.git' &
-  package 'eagletmt/neco-ghc' &
-  package 'scrooloose/syntastic.git' &
-  package 'shougo/vimproc.vim' &
-  package 'godlygeek/tabular.git' &
-  package 'ervandew/supertab.git' &
-  package 'purescript-contrib/purescript-vim'
-  wait
-) &
+#(
+  # set_group haskell
+  # package 'lukerandall/haskellmode-vim' &
+  # package 'eagletmt/ghcmod-vim.git' &
+  # package 'eagletmt/neco-ghc' &
+  # package 'scrooloose/syntastic.git' &
+  # package 'shougo/vimproc.vim' &
+  # package 'godlygeek/tabular.git' &
+  # package 'ervandew/supertab.git' &
+  # package 'purescript-contrib/purescript-vim'
+  # wait
+# ) &
 
 (
   set_group syntax
   package 'groenewege/vim-less' &
   package 'MicahElliott/vrod' &
   package 'rvesse/vim-sparql' &
-  #package 'elmcast/elm-vim' &
   package 'niklasl/vim-rdf' &
-  package https://github.com/tpope/vim-markdown.git &
-  package https://github.com/ap/vim-css-color.git &
+  package 'https://tpope.io/vim/markdown.git' &
+  # package https://tpope.io/vim/css-color.git &
+  # package 'mlochbaum/BQN' &
   wait
 ) &
 
-(
+# (
 #   set_group clojure
 #   package 'tpope/vim-fireplace'
 #   package 'guns/vim-clojure-static'
 #   package 'tpope/vim-classpath.git'
 #   package 'guns/vim-clojure-highlight'
-  wait
-) &
+#   wait
+# ) &
 
 wait
